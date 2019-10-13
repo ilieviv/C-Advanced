@@ -60,7 +60,6 @@ namespace _05._Filter_By_Age
                 {
                     Console.WriteLine($"{person.Age}");
                 }
-
             }
         }
     }
