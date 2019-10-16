@@ -1,20 +1,28 @@
 ﻿using System;
 
-namespace _1._Car
+namespace CarManufacturer
 {
-    class Dog
+    public class Car
     {
-        public static void Sleep()
-        {
-            Console.WriteLine("go to sleep");
-        }
+        private string make;
+        private string model;
+        private int year;
+
+        public string Make { get; set; }
+        public string Model { get; set; }
+        public int Year { get; set; }
     }
 
-    class Program
+    public class StartUp
     {
         static void Main(string[] args)
         {
-            Dog.Sleep();
+            var car = new Car();
+            car.Model = "F40";
+            car.Make = "Ferrari";
+            car.Year = 2015;
+
+
         }
     }
 }
