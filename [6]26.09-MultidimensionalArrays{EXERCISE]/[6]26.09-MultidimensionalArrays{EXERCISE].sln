@@ -15,7 +15,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5. Snake Moves", "5. Snake 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "6. Jagged Array Manipulator", "6. Jagged Array Manipulator\6. Jagged Array Manipulator.csproj", "{9ECB8EBE-17CF-49CA-A68E-9A503B60624B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7. Knight Game", "7. Knight Game\7. Knight Game.csproj", "{DDC22AC3-786E-4F93-8D93-95CCDB0566D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7. Knight Game", "7. Knight Game\7. Knight Game.csproj", "{DDC22AC3-786E-4F93-8D93-95CCDB0566D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "9. Miner", "9. Miner\9. Miner.csproj", "{9E2EB414-3180-4BDF-9BB2-32F958FB3283}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8. Bombs", "8. Bombs\8. Bombs.csproj", "{130F28F9-0A69-44AA-85AF-3E01337C1B21}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,14 @@ Global
 		{DDC22AC3-786E-4F93-8D93-95CCDB0566D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDC22AC3-786E-4F93-8D93-95CCDB0566D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDC22AC3-786E-4F93-8D93-95CCDB0566D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E2EB414-3180-4BDF-9BB2-32F958FB3283}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E2EB414-3180-4BDF-9BB2-32F958FB3283}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E2EB414-3180-4BDF-9BB2-32F958FB3283}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E2EB414-3180-4BDF-9BB2-32F958FB3283}.Release|Any CPU.Build.0 = Release|Any CPU
+		{130F28F9-0A69-44AA-85AF-3E01337C1B21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{130F28F9-0A69-44AA-85AF-3E01337C1B21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{130F28F9-0A69-44AA-85AF-3E01337C1B21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{130F28F9-0A69-44AA-85AF-3E01337C1B21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
