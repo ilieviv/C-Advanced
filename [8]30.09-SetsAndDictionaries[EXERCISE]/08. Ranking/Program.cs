@@ -64,34 +64,45 @@ namespace _08._Ranking
                 inputSubmissions = Console.ReadLine();
             }
 
-            int bestScore = 0;
-            string bestUser = string.Empty;
+            //int bestScore = 0;
+            //string bestUser = string.Empty;
 
-            foreach (var person in participants)
-            {
+            //foreach (var person in participants)
+            //{
 
-                int sum = 0;
-                foreach (var exam in person.Value)
-                {
-                    sum += exam.Value;
-                }
+            //    int sum = 0;
+            //    foreach (var exam in person.Value)
+            //    {
+            //        sum += exam.Value;
+            //    }
 
-                if (sum > bestScore)
-                {
-                    bestScore = sum;
-                    bestUser = person.Key;
-                }
-            }
+            //    if (sum > bestScore)
+            //    {
+            //        bestScore = sum;
+            //        bestUser = person.Key;
+            //    }
+            //}
 
-            Console.WriteLine($"Best candidate is {bestUser} with total {bestScore} points.");
+            //Console.WriteLine($"Best candidate is {bestUser} with total {bestScore} points.");
+            var topCandidate = participants
+                .OrderByDescending(x => x.Value.Sum(s => s.Value))
+                .FirstOrDefault();
+
+            Console.WriteLine($"Best candidate is {topCandidate.Key} with total {topCandidate.Value.Sum(x => x.Value)} points.");
+
             Console.WriteLine("Ranking:");
             foreach (var participant in participants.OrderBy(x => x.Key))
             {
                 Console.WriteLine($"{participant.Key}");
 
-                foreach (var exam in participant.Value.OrderBy(x => x.Key))
+                //foreach (var exam in participant.Value.OrderBy(x => x.Key))
+                //{
+                //    Console.WriteLine($"#  {exam.Key} -> {exam.Value}");
+                //}
+
+                foreach (var (exam, point) in participant.Value.OrderBy(x => x.Key))
                 {
-                    Console.WriteLine($"#  {exam.Key} -> {exam.Value}");
+                    Console.WriteLine($"#  {exam} -> {point}");
                 }
             }
         }
